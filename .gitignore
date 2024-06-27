@@ -1,3 +1,4 @@
 .nextflow*
 out_*
 work
+.Rhistory

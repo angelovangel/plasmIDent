@@ -1,11 +1,11 @@
 ################################
 #                              #
 #         DOCKERFILE           #
-#   Hybrid Assembly Pipeline   #
+#   plasmIDent Pipeline        #
 #                              #
 ################################
 FROM continuumio/miniconda3
-MAINTAINER Caspar Gross <mail@caspar.one>
+LABEL author="Caspar Gross <mail@caspar.one>"
 LABEL description="contains all the dependencies for plasmid Identification pipeline at github.com/caspargross/plasmidIdentification" 
 
 SHELL ["/bin/bash", "-c"]
