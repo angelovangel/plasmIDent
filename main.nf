@@ -303,6 +303,7 @@ process calcGC {
 // Calculate gc conten
     publishDir "${params.outDir}/${id}/gc", mode: 'copy'
     tag{id}
+    errorStrategy 'ignore'
 
     input:
     set id, assembly, lr, type from gc_padded
@@ -399,6 +400,7 @@ process table{
 // Create table with contig informations
     publishDir "${params.outDir}/${id}/", mode: 'copy'
     tag{id}
+    errorStrategy 'ignore'
 
     input:
     set id, gc, assembly, cov, type, rgi from table_data
